@@ -1,0 +1,197 @@
+body {
+    background-color: #000000f2;
+    font-family:"-apple-system,BlinkMacSystemFont","Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.side-nav
+{
+    width: 22%;
+    height: 100vh;
+    z-index: 55555555;
+    top: 0;
+    left: 0;
+   
+}
+.nav
+{
+    width: 25%;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+.menu
+{
+       width: 75%;
+    height: 100vh;
+      background-color: #000;
+       transition: all 0.6s ease;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       align-content: space-between;
+      
+}
+.nav-items ul
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.close
+{
+    display: none;
+}
+.item
+{
+    display: none;
+}
+.nav-items li
+{
+    list-style-type: none;
+    padding-top: 25px;
+    width: 100%;
+    animation: "navMove" 1s  infinIte alternate ;
+
+}
+.nav-items a:hover
+{
+    color: rgb(221, 28, 134); 
+}
+
+.nav-category
+{
+    text-decoration: none;
+    color: #f9f6f6;
+    font-weight: 300;
+    font-size: 16px;
+        
+}
+.nav-social-item a
+{
+    color: #f9f6f6;
+}
+.nav-social-item a:hover
+{
+    color: rgb(221, 28, 134); 
+}
+.nav-social-item span
+{
+    color: #999999;
+}
+.toggle-nav , .social
+{
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 767px) {
+    #side-nav
+    {
+        width: 30%;
+    }
+    #side-nav .nav
+    {
+        width: 30%;
+    }
+    #side-nav .menu
+    {
+        width: 70%;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    #side-nav .nav .toggle-nav{
+        width: 50%;
+        font-size: 12px;
+    }
+    #side-nav .menu .nav-category {
+      font-size: 10px;
+    }
+    #side-nav .menu .nav-social-item{
+        font-size: 10px;
+
+  }
+  #side-nav .menu .nav-social-item span{
+    font-size: 7px;
+  }
+}
+  @media screen and (max-width: 600px) {
+    #side-nav
+    {
+        width: 30%;
+    }
+    #side-nav .nav
+    {
+        width: 30%;
+    }
+       #side-nav .menu
+    {
+        width: 70%;
+        display: flex;
+        justify-content:start;
+        align-items: center;
+    }
+    .menu .nav-items ul
+{
+   display: flex;
+   justify-content: start;
+}
+    #side-nav .nav .toggle-nav{
+        width: 50%;
+    }
+    #side-nav .menu .nav-items {
+       width: 50%;
+       display: flex;
+        justify-content: start;
+        align-items: center;
+      }
+      #side-nav .menu .nav-social-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7px;
+      }
+      #side-nav .menu span{
+        font-size: 7px;
+      }
+      
+  }
+
+.search
+{
+   
+    background-color: transparent;
+    border: none;
+border-bottom: indigo solid 2px;
+}
+
+.layout
+{
+    top:100%;
+    left: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: top 1s;
+}
+.layout h2
+{
+    font-weight: 350;
+}
+.movie-poster:hover .layout
+{
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+#contact h2
+{
+color: #f8f9fa;
+font-weight: 300;
+}
+#submitBtn
+{
+    color: #dc3545;
+    background-color: transparent;
+    border:#dc3545 1px solid;
+}
